@@ -7,10 +7,10 @@ spring:
   # Redis 配置
   data:
     redis:
-      host: 127.0.0.1 # Redis 服务器地址
-      port: 6379 # Redis 服务器端口
-      database: 0 # Redis 数据库索引
-      # password: # Redis 密码，如果有的话
+      host: 172.16.1.78 # Redis 服务器地址
+      port: 26378 # Redis 服务器端口
+      database: 7 # Redis 数据库索引
+      password: 123456 # Redis 密码，如果有的话
       timeout: 30000ms # 连接超时时间
 
 --- #################### 消息队列相关 ####################
@@ -88,7 +88,7 @@ yudao:
         # 针对引入的 TCP 组件的配置
         # ====================================
         tcp:
-          enabled: false
+          enabled: true
           port: 8091
           keep-alive-timeout-ms: 30000
           max-connections: 1000
