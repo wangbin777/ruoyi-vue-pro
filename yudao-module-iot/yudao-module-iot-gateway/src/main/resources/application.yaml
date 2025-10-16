@@ -1,3 +1,6 @@
+server:
+  port: 48088
+
 spring:
   application:
     name: iot-gateway-server
@@ -48,7 +51,7 @@ yudao:
         # 针对引入的 HTTP 组件的配置
         # ====================================
         http:
-          enabled: true
+          enabled: false
           server-port: 8092
         # ====================================
         # 针对引入的 EMQX 组件的配置
